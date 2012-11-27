@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<!-- xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd" -->
+
+
+	<!-- <application> -->
+	<!-- <variable-resolver>org.springframework.web.jsf.SpringBeanVariableResolver</variable-resolver> -->
+	<!-- </application> -->
+
+	<!-- <managed-bean> -->
+	<!-- <managed-bean-name>stockBean</managed-bean-name> -->
+	<!-- <managed-bean-class> -->
+	<!-- net.javabeat.articles.springjsf.introduction.StockValueFetcher -->
+	<!-- </managed-bean-class> -->
+	<!-- <managed-bean-scope>request</managed-bean-scope> -->
+	<!-- </managed-bean> -->
+
+	<!--<navigation-rule> -->
+	<!--<description>Navigation from the hello page.</description> -->
+	<!-- <from-view-id>/stockInput.jsp</from-view-id> -->
+	<!-- <navigation-case> -->
+	<!-- <from-outcome>stockOutputSuccess</from-outcome> -->
+	<!-- <to-view-id>/stockOutputSuccess.jsp</to-view-id> -->
+	<!-- </navigation-case> -->
+	<!-- <navigation-case> -->
+	<!-- <from-outcome>stockOutputFailure</from-outcome> -->
+	<!-- <to-view-id>/stockOutputFailure.jsp</to-view-id> -->
+	<!-- </navigation-case> -->
+	<!--</navigation-rule> -->
+
+	<application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver
+		</el-resolver>
+	</application>
+
+</faces-config>
+
